@@ -90,7 +90,7 @@ export default function WormwoodTablePage() {
             <div className="space-y-8">
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-sm tracking-widest uppercase text-gray-700 mb-2">Dimensions</h3>
-                <p className="text-gray-600 font-light">28" - 31" W, 18" H, 30" L</p>
+                <p className="text-gray-600 font-light">36" L, 19" - 9" W, 17.25" H</p>
               </div>
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-sm tracking-widest uppercase text-gray-700 mb-2">Wood Species</h3>
@@ -122,7 +122,7 @@ export default function WormwoodTablePage() {
         <div className="border-l-4 border-black pl-8">
           <h3 className="text-sm tracking-widest uppercase text-gray-700 mb-3">Availability</h3>
           <p className="text-2xl font-light mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>Available for Purchase</p>
-          <p className="text-gray-600 font-light mb-4">$350</p>
+          <p className="text-gray-600 font-light mb-4">$325</p>
           <p className="text-sm text-gray-600 font-light">Contact us for details on purchasing this piece</p>
           <a
             href="mailto:t.woodwormdesigns@gmail.com"
