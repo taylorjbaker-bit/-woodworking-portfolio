@@ -35,6 +35,9 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${lato.variable} ${cormorantGaramond.variable}`}
     >
+      <head>
+        <link rel="icon" type="image/png" href="/assets/logo/new-logo.png" />
+      </head>
       <body className="bg-white text-black">{children}</body>
     </html>
   );
