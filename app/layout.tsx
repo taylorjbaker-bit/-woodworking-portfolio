@@ -23,9 +23,6 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "WoodWorm Design | Handcrafted Furniture",
   description: "Fine handcrafted woodworking pieces. Bespoke furniture designed and built with precision.",
-  icons: {
-    icon: "/assets/logo/new-logo.png",
-  },
 };
 
 export default function RootLayout({
