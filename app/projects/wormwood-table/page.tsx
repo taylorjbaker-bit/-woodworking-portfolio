@@ -122,7 +122,7 @@ export default function WormwoodTablePage() {
         <div className="border-l-4 border-black pl-8">
           <h3 className="text-sm tracking-widest uppercase text-gray-700 mb-3">Availability</h3>
           <p className="text-2xl font-light mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>Available for Purchase</p>
-          <p className="text-gray-600 font-light mb-4">$300</p>
+          <p className="text-gray-600 font-light mb-4">$450</p>
           <p className="text-sm text-gray-600 font-light">Contact us for details on purchasing this piece</p>
           <a
             href="mailto:t.woodwormdesigns@gmail.com"
