@@ -13,7 +13,6 @@ export default function WormwoodTablePage() {
     "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_15_14 PM.png",
     "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_16_22 PM.png",
     "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_19_28 PM.png",
-    "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_22_14 PM.png",
   ];
 
   return (
