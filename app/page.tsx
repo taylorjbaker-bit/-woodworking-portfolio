@@ -27,15 +27,15 @@ export default function Home() {
             />
           </Link>
 
-          {/* Centered Title */}
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2">
+          {/* Centered Title - Hidden on mobile */}
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 hidden lg:block">
             <span className="text-2xl font-light" style={{ fontFamily: 'var(--font-elegant)' }}>
               Wood+Worm Design
             </span>
           </Link>
 
           {/* Navigation - Right */}
-          <div className="flex gap-12 text-sm tracking-widest uppercase">
+          <div className="flex gap-4 lg:gap-12 text-xs lg:text-sm tracking-widest uppercase">
             <a href="#portfolio" className="text-gray-700 hover:text-black transition">
               Work
             </a>

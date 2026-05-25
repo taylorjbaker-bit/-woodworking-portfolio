@@ -29,12 +29,12 @@ export default function WormwoodTablePage() {
               className="object-contain"
             />
           </Link>
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2">
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 hidden lg:block">
             <span className="text-xl font-light" style={{ fontFamily: 'var(--font-elegant)' }}>
               Wood+Worm Design
             </span>
           </Link>
-          <Link href="/#portfolio" className="text-sm tracking-widest uppercase text-gray-600 hover:text-black transition">
+          <Link href="/#portfolio" className="text-xs lg:text-sm tracking-widest uppercase text-gray-600 hover:text-black transition">
             Back to Work
           </Link>
         </nav>
