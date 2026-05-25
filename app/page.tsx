@@ -47,7 +47,17 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Split Layout */}
-      <section className="w-full min-h-screen flex items-stretch">
+      <section className="w-full flex flex-col lg:flex-row lg:min-h-screen lg:items-stretch">
+        {/* Mobile Image - Shows first on mobile */}
+        <div className="lg:hidden w-full h-64 relative">
+          <Image
+            src="/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_15_14 PM.png"
+            alt="WoodWorm Design Showcase"
+            fill
+            className="object-cover"
+          />
+        </div>
+
         {/* Left Side - Content */}
         <div className="w-full lg:w-1/2 bg-gray-50 px-6 lg:px-12 py-24 lg:py-32 flex flex-col justify-center">
           <h1 className="text-5xl lg:text-6xl font-light mb-6 text-center" style={{ fontFamily: 'var(--font-playfair)' }}>
