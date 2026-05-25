@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface ImageGalleryProps {
   images: string[];
@@ -12,6 +12,8 @@ interface ImageGalleryProps {
 
 export default function ImageGallery({ images, alt, initialIndex, onClose }: ImageGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(initialIndex ?? null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -34,6 +36,27 @@ export default function ImageGallery({ images, alt, initialIndex, onClose }: Ima
     if (e.key === "Escape") {
       setSelectedIndex(null);
       onClose?.();
+    }
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].screenX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (selectedIndex === null) return;
+    const diff = touchStartX.current - touchEndX.current;
+    const threshold = 50;
+
+    if (diff > threshold) {
+      setSelectedIndex((selectedIndex + 1) % images.length);
+    } else if (diff < -threshold) {
+      setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
     }
   };
 
@@ -69,35 +92,40 @@ export default function ImageGallery({ images, alt, initialIndex, onClose }: Ima
       {selectedIndex !== null && (
         <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-          onClick={handleClose}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) handleClose();
+          }}
           onKeyDown={handleKeyDown}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
           role="dialog"
           tabIndex={0}
         >
           {/* Close Button */}
           <button
             onClick={handleClose}
-            className="absolute top-6 right-6 text-white hover:text-gray-300 transition text-4xl leading-none"
+            className="absolute top-4 right-4 lg:top-6 lg:right-6 text-white hover:text-gray-300 transition text-3xl lg:text-4xl leading-none z-10"
             aria-label="Close"
           >
             ✕
           </button>
 
           {/* Main Image */}
-          <div className="relative w-full h-full max-w-5xl max-h-[80vh] flex items-center justify-center">
+          <div className="relative w-full h-full max-w-5xl max-h-[80vh] flex items-center justify-center select-none">
             <Image
               src={images[selectedIndex]}
               alt={`${alt} ${selectedIndex + 1}`}
               fill
               className="object-contain"
               priority
+              draggable={false}
             />
           </div>
 
           {/* Previous Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition text-4xl leading-none"
+            className="absolute left-2 lg:left-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition text-3xl lg:text-4xl leading-none p-2 lg:p-4"
             aria-label="Previous image"
           >
             ‹
@@ -106,14 +134,14 @@ export default function ImageGallery({ images, alt, initialIndex, onClose }: Ima
           {/* Next Button */}
           <button
             onClick={handleNext}
-            className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition text-4xl leading-none"
+            className="absolute right-2 lg:right-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition text-3xl lg:text-4xl leading-none p-2 lg:p-4"
             aria-label="Next image"
           >
             ›
           </button>
 
           {/* Image Counter */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm tracking-widest">
+          <div className="absolute bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 text-white text-xs lg:text-sm tracking-widest">
             {selectedIndex + 1} / {images.length}
           </div>
         </div>
