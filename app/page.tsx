@@ -56,6 +56,8 @@ export default function Home() {
             fill
             className="object-cover"
           />
+          {/* Fade Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-50"></div>
         </div>
 
         {/* Left Side - Content */}
