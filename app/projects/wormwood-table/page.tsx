@@ -22,7 +22,7 @@ export default function WormwoodTablePage() {
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center relative">
           <Link href="/" className="w-12 h-12 relative">
             <Image
-              src="/assets/logo/new-logo.png"
+              src="/assets/logo/ww-logo.png"
               alt="Wood+Worm Design"
               fill
               className="object-contain"
@@ -169,7 +169,7 @@ export default function WormwoodTablePage() {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
             <div className="w-24 h-24 relative opacity-20">
               <Image
-                src="/assets/logo/new-logo.png"
+                src="/assets/logo/ww-logo.png"
                 alt="WoodWorm Design"
                 fill
                 className="object-contain"

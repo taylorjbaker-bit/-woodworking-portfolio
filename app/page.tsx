@@ -20,7 +20,7 @@ export default function Home() {
           {/* Logo - Top Left */}
           <Link href="/" className="w-12 h-12 relative">
             <Image
-              src="/assets/logo/new-logo.png"
+              src="/assets/logo/ww-logo.png"
               alt="Wood+Worm Design"
               fill
               className="object-contain"
@@ -223,7 +223,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="w-24 h-24 relative opacity-15">
                 <Image
-                  src="/assets/logo/new-logo.png"
+                  src="/assets/logo/ww-logo.png"
                   alt="WoodWorm Design"
                   fill
                   className="object-contain"
