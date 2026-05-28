@@ -17,14 +17,26 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center relative">
-          {/* Logo - Centered */}
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2 w-12 h-12 relative lg:w-16 lg:h-16">
+          {/* Monogram - Left */}
+          <Link href="/" className="w-8 h-8 lg:w-10 lg:h-10 relative flex-shrink-0">
             <Image
-              src="/assets/logo/ww-logo.png"
+              src="/assets/logo/ww-logo-monogram.png"
               alt="Wood+Worm Design"
               fill
               className="object-contain"
             />
+          </Link>
+
+          {/* Text Logo - Centered */}
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center">
+            <div className="text-sm font-light tracking-wider" style={{ fontFamily: 'Georgia, serif' }}>
+              WOOD + WORM
+            </div>
+            <div className="flex items-center gap-2 mt-1">
+              <div className="w-6 h-px bg-black"></div>
+              <span className="text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>DESIGNS</span>
+              <div className="w-6 h-px bg-black"></div>
+            </div>
           </Link>
 
           {/* Navigation - Right */}
