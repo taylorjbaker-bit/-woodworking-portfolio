@@ -38,6 +38,10 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${lato.variable} ${cormorantGaramond.variable}`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body className="bg-white text-black">{children}</body>
     </html>
   );
