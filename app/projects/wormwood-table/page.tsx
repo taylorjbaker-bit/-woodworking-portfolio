@@ -20,7 +20,7 @@ export default function WormwoodTablePage() {
       {/* Header */}
       <header className="border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center relative">
-          <Link href="/" className="w-12 h-12 relative">
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 w-12 h-12 relative lg:w-16 lg:h-16">
             <Image
               src="/assets/logo/ww-logo.png"
               alt="Wood+Worm Design"
@@ -28,12 +28,7 @@ export default function WormwoodTablePage() {
               className="object-contain"
             />
           </Link>
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-            <span className="text-xl font-light" style={{ fontFamily: 'var(--font-elegant)' }}>
-              Wood+Worm Design
-            </span>
-          </Link>
-          <Link href="/#portfolio" className="text-xs lg:text-sm tracking-widest uppercase text-gray-600 hover:text-black transition">
+          <Link href="/#portfolio" className="ml-auto text-xs lg:text-sm tracking-widest uppercase text-gray-600 hover:text-black transition">
             Back to Work
           </Link>
         </nav>

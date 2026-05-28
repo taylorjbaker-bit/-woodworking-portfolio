@@ -17,8 +17,8 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center relative">
-          {/* Logo - Top Left */}
-          <Link href="/" className="w-12 h-12 relative">
+          {/* Logo - Centered */}
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 w-12 h-12 relative lg:w-16 lg:h-16">
             <Image
               src="/assets/logo/ww-logo.png"
               alt="Wood+Worm Design"
@@ -27,15 +27,8 @@ export default function Home() {
             />
           </Link>
 
-          {/* Centered Title - Hidden on mobile */}
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2 hidden lg:block">
-            <span className="text-2xl font-light" style={{ fontFamily: 'var(--font-elegant)' }}>
-              Wood+Worm Design
-            </span>
-          </Link>
-
           {/* Navigation - Right */}
-          <div className="flex gap-4 lg:gap-12 text-xs lg:text-sm tracking-widest uppercase">
+          <div className="flex gap-4 lg:gap-12 text-xs lg:text-sm tracking-widest uppercase ml-auto">
             <a href="#portfolio" className="text-gray-700 hover:text-black transition">
               Work
             </a>
