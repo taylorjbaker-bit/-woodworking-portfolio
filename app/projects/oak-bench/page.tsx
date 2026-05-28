@@ -22,7 +22,7 @@ export default function OakBenchPage() {
       <header className="border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center relative">
           {/* Monogram - Left */}
-          <Link href="/" className="w-8 h-8 lg:w-10 lg:h-10 relative flex-shrink-0">
+          <Link href="/" className="w-12 h-12 lg:w-16 lg:h-16 relative flex-shrink-0">
             <Image
               src="/assets/logo/ww-logo-monogram.png"
               alt="Wood+Worm Design"
