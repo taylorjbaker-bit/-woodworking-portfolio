@@ -15,7 +15,7 @@ export default function Home() {
       name: "Black Walnut Cheese Boards",
       category: "Serveware",
       description: "Elegant serving pieces crafted from rich black walnut with hand-finished details",
-      image: "/assets/projects/cheese-board/Image 1.png",
+      image: "/assets/projects/cheese-board/Final.Image-5.png",
     },
   ];
 
