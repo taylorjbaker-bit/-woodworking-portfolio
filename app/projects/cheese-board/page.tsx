@@ -116,6 +116,22 @@ export default function CheeseBoardPage() {
         </div>
       </section>
 
+      {/* Availability Section */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 mb-20 lg:mb-32">
+        <div className="border-l-4 border-black pl-8">
+          <h3 className="text-sm tracking-widest uppercase text-gray-700 mb-3">Availability</h3>
+          <p className="text-2xl font-light mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>Available for Purchase</p>
+          <p className="text-gray-600 font-light mb-4">$60</p>
+          <p className="text-sm text-gray-600 font-light">Contact us for details on purchasing this piece</p>
+          <a
+            href="mailto:t.woodwormdesigns@gmail.com"
+            className="inline-block mt-4 px-6 py-3 border border-black text-black hover:bg-black hover:text-white transition font-light tracking-widest uppercase text-xs"
+          >
+            Inquire About This Piece
+          </a>
+        </div>
+      </section>
+
       {/* Divider */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="border-t border-gray-200"></div>
