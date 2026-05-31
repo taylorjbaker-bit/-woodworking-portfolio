@@ -9,11 +9,10 @@ import { useState } from "react";
 export default function CheeseBoardPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const images = [
-    "/assets/projects/cheese-board/Image 1.png",
-    "/assets/projects/cheese-board/IMage 2.png",
-    "/assets/projects/cheese-board/Image 3.png",
-    "/assets/projects/cheese-board/Image 4.png",
-    "/assets/projects/cheese-board/Image 5.png",
+    "/assets/projects/cheese-board/Final.Image 1.png",
+    "/assets/projects/cheese-board/Final.Image 3.png",
+    "/assets/projects/cheese-board/Final.Image 4.png",
+    "/assets/projects/cheese-board/Final.Image 5.png",
   ];
 
   return (
