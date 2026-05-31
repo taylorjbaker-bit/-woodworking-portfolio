@@ -78,13 +78,13 @@ export default function CheeseBoardPage() {
               About the Piece
             </h2>
             <p className="text-gray-600 font-light leading-relaxed mb-8">
-              Our Black Walnut Cheese Boards are crafted from carefully selected walnut, one of the finest domestic hardwoods. The deep chocolate tones and striking grain patterns make each piece visually distinctive.
+              Our Black Walnut Cheese Boards are crafted from carefully selected Walnut, one of the finest domestic hardwoods. The deep chocolate tones and striking grain patterns make each piece visually distinctive.
             </p>
             <p className="text-gray-600 font-light leading-relaxed mb-8">
-              Every board is individually hand-finished to bring out the natural depth of the walnut while maintaining a smooth, food-safe surface. Whether used for serving or display, these boards add sophistication to any table setting.
+              Each cheese board has been carefully sanded up to 320 grit for an ultra-smooth finish while still preserving the natural live edge feel. Rubber feet bottom have been added for stability along with subtle finger grooves on the sides for easier carrying and serving.
             </p>
             <p className="text-gray-600 font-light leading-relaxed">
-              Available in various sizes, each board can be customized to suit your specific needs and preferences.
+              Finished with a food-safe oil, these boards are perfect for charcuterie nights, centerpieces, dinner parties, or simply adding a little craftsmanship to your kitchen.
             </p>
           </div>
 
