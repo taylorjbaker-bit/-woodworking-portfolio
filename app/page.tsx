@@ -10,6 +10,13 @@ export default function Home() {
       description: "A delicate coffee table restored with black epoxy and timeless craftsmanship",
       image: "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_12_42 PM.png",
     },
+    {
+      id: "cheese-board",
+      name: "Black Walnut Cheese Boards",
+      category: "Serveware",
+      description: "Elegant serving pieces crafted from rich black walnut with hand-finished details",
+      image: "/assets/projects/cheese-board/Image 1.png",
+    },
   ];
 
   return (
