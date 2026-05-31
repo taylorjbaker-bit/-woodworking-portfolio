@@ -8,6 +8,7 @@ import { useState } from "react";
 
 export default function CheeseBoardPage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  // Image order: styled board first, then detail shots
   const images = [
     "/assets/projects/cheese-board/Final.Image-5.png",
     "/assets/projects/cheese-board/Final.Image-1.png",
