@@ -63,7 +63,7 @@ export default function Home() {
         {/* Mobile Image - Shows first on mobile */}
         <div className="lg:hidden w-full h-64 relative">
           <Image
-            src="/assets/projects/wormwood-table/Final-Image-9.png"
+            src="/assets/projects/wormwood-table/Final-Image-4.png"
             alt="WoodWorm Design Showcase"
             fill
             className="object-cover"
@@ -122,7 +122,7 @@ export default function Home() {
         {/* Right Side - Image */}
         <div className="hidden lg:block w-1/2 relative">
           <Image
-            src="/assets/projects/wormwood-table/Final-Image-9.png"
+            src="/assets/projects/wormwood-table/Final-Image-4.png"
             alt="WoodWorm Design Showcase"
             fill
             className="object-cover"
