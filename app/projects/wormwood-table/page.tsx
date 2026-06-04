@@ -9,10 +9,11 @@ import { useState } from "react";
 export default function WormwoodTablePage() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const images = [
-    "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_12_42 PM.png",
-    "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_15_14 PM.png",
-    "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_16_22 PM.png",
-    "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_19_28 PM.png",
+    "/assets/projects/wormwood-table/Final-Image-9.png",
+    "/assets/projects/wormwood-table/Final-Image-7.png",
+    "/assets/projects/wormwood-table/Final-Image-6.png",
+    "/assets/projects/wormwood-table/Final-Image-4.png",
+    "/assets/projects/wormwood-table/Final-Image-8.png",
   ];
 
   return (
