@@ -8,7 +8,7 @@ export default function Home() {
       name: "Wormwood Table",
       category: "Dining",
       description: "A delicate coffee table restored with black epoxy and timeless craftsmanship",
-      image: "/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_12_42 PM.png",
+      image: "/assets/projects/wormwood-table/Final-Image-9.png",
     },
     {
       id: "cheese-board",
@@ -63,7 +63,7 @@ export default function Home() {
         {/* Mobile Image - Shows first on mobile */}
         <div className="lg:hidden w-full h-64 relative">
           <Image
-            src="/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_15_14 PM.png"
+            src="/assets/projects/wormwood-table/Final-Image-9.png"
             alt="WoodWorm Design Showcase"
             fill
             className="object-cover"
@@ -122,7 +122,7 @@ export default function Home() {
         {/* Right Side - Image */}
         <div className="hidden lg:block w-1/2 relative">
           <Image
-            src="/assets/projects/wormwood-table/ChatGPT Image May 23, 2026, 03_15_14 PM.png"
+            src="/assets/projects/wormwood-table/Final-Image-9.png"
             alt="WoodWorm Design Showcase"
             fill
             className="object-cover"
